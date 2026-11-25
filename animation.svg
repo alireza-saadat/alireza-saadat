@@ -1,0 +1,59 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#050816"/>
+      <stop offset="1" stop-color="#001c20"/>
+    </linearGradient>
+    <linearGradient id="neon">
+      <stop stop-color="#00ff99"/>
+      <stop offset="1" stop-color="#00ccff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="300" rx="18" fill="url(#bg)"/>
+
+  <g stroke="#00ff99" opacity=".15">
+    <path d="M0 50H900 M0 100H900 M0 150H900 M0 200H900 M0 250H900"/>
+    <path d="M50 0V300 M100 0V300 M150 0V300 M750 0V300 M800 0V300 M850 0V300"/>
+  </g>
+
+  <g fill="#00ff99" font-family="monospace" font-size="13" opacity=".5">
+    <text x="30" y="40">01001000 01000001 01000011 01001011</text>
+    <text x="680" y="70">SYSTEM_01</text>
+    <text x="40" y="270">ACCESS_GRANTED</text>
+    <text x="700" y="260">0x4F2A</text>
+  </g>
+
+  <g font-family="monospace" text-anchor="middle">
+    <text x="450" y="85" fill="#00ff99" font-size="17">
+      &gt; INITIALIZING SYSTEM...
+      <animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="450" y="155" fill="url(#neon)" font-size="48" font-weight="bold" filter="url(#glow)">
+      ALIREZA SAADAT
+    </text>
+
+    <text x="450" y="195" fill="#d1d5db" font-size="19">
+      COMPUTER ENGINEERING
+    </text>
+
+    <text x="450" y="235" fill="#00ff99" font-size="16">
+      &gt; Python Developer | Future Cybersecurity Engineer
+    </text>
+  </g>
+
+  <path d="M0 0H900" stroke="#00ff99" stroke-width="2" opacity=".6">
+    <animate attributeName="stroke-opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+  </path>
+
+  <rect x="2" y="2" width="896" height="296" rx="17" fill="none" stroke="#00ff99" stroke-opacity=".5"/>
+</svg>
