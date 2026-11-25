@@ -4,10 +4,6 @@
 
 <br>
 
-<div align="center">
-  <img src="./animation.svg" width="100%" alt="Alireza Saadat Animated Banner">
-</div>
-
 # Hi, I'm Alireza 👋
 
 ### Computer Engineering Student | Python Developer
